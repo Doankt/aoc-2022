@@ -2,7 +2,7 @@ from aocparser import *
 import re
 
 def load_stacks():
-    with open("inputs/day5.txt", "r") as file:
+    with aoc_open(5) as file:
         lines = []
         line = file.readline().strip("\n")
         while line:
@@ -28,7 +28,7 @@ def load_stacks():
 
 def load_moves():
     lines = []
-    with open("inputs/day5.txt", "r") as file:
+    with aoc_open(5) as file:
         # Skip through stacks
         while (file.readline().strip("\n")):    pass
 

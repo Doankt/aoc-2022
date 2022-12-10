@@ -39,7 +39,7 @@ def get_bigger_dirs(dir, min_size, size=0, dir_list=[]):
     return (size + curr_sum, curr_list)
 
 def load_system():
-    with open("inputs/day7.txt", "r") as file:
+    with aoc_open(7) as file:
         working_dir = []
         line = file.readline()
         while line:

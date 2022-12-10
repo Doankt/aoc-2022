@@ -1,14 +1,13 @@
 from aocparser import *
 
 def find_window(window_size: int):
-    with open("inputs/day6.txt", "r") as file:
+    with aoc_open(6) as file:
         data = file.read()
     shift = 0
     while shift <= len(data) - window_size:
         window = data[shift:shift+window_size]
 
         if len(set(window)) == window_size:
-            print(window)
             return shift + window_size
         shift += 1
 

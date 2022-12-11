@@ -7,8 +7,8 @@ My thoughts on improvements for a day can be found under [SOLUTION_NOTES](SOLUTI
 
 ## Structure
 
-```src/``` Contains solutions per day
-```inputs/day{x}``` Contains two files in this dir. One for the actual input and one for test input.
+- ```src/``` Contains solutions per day
+- ```inputs/day{x}``` Contains two files in this dir. One for the actual input and one for test input.
 
 ## Notes Per Day {#notes}
 

@@ -18,7 +18,6 @@ class SnakeSolution:
         self.test = test
 
     def do_step(self, direction):
-        head_start = self.snake[0][:]
         if direction == "R":
             self.snake[0][0] += 1
         elif direction == "L":

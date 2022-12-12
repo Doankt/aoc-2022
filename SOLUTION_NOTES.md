@@ -87,6 +87,20 @@ LCM would probably work better instead of multiplying all the mod values togethe
 
 ## Day 12
 
+This is definitely something I will have to revisit. [hyper-netrino's video](https://www.youtube.com/watch?v=xhe79JubaZI) for today really helped explain the solution for today.
+
+My definition for heights are as follows:
+
+```text
+a = 0
+b = 1
+...
+y = 24
+z = 25
+```
+
+For part 1, I tried to implement a recursive search only to realize this was the brute force method and would not be viable for larger inputs.
+
 ## Day 13
 
 ## Day 14

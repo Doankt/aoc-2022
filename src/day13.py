@@ -27,16 +27,16 @@ class PacketSolution:
         fl, fr = left[0], right[0]
 
         # Filter by comparison
-        if type(fl) == int and type(fr) == int:
+        if isinstance(fl, int) and isinstance(fr, int):
             # int on both sides
             if fl == fr:
                 res = True
             else:
                 res = fl - fr
-        elif type(fl) == int and not type(fr) == int:
+        elif isinstance(fl, int) and not isinstance(fr, int):
             # int on left, list on right
             res = self.list_compare([fl], fr)
-        elif not type(fl) == int and type(fr) == int:
+        elif not isinstance(fl, int) and isinstance(fr, int):
             # list on right, int on left
             res = self.list_compare(fl, [fr])
         else:

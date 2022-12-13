@@ -101,7 +101,15 @@ z = 25
 
 For part 1, I tried to implement a recursive search only to realize this was the brute force method and would not be viable for larger inputs.
 
+After revisiting the solution, this is definitely something I had learned in the past. The overall logic was there, but my initial implementation was neglecting to use a queue for BFS.
+
+Also seen that Dijkstra's was possible to use here with all paths being weight 1, though it would still be better to use DFS here.
+If the following days include path weights, I suspect that Dijkstra's will come into play.
+
 ## Day 13
+
+Immediately thought about some recursive function when reading this problem.
+Though this function feels poorly designed as a bool is returned if we should continue processing, and an int is returned as the final result.
 
 ## Day 14
 
